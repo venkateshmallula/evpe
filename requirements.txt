@@ -4,4 +4,5 @@ pandas
 numpy
 scikit-learn
 matplotlib
-pickle
+pickle-mixin
+
