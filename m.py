@@ -48,7 +48,7 @@ def categorize_weather(temperature, humidity):
 
 # Define the Streamlit app
 def main():
-    st.title("Machine Learning Prediction App")
+    st.title("Predicting Battery Swap Station Utilization Using Real-Time Weather Data")
 
     st.write("""
     ## Input Data
@@ -58,7 +58,7 @@ def main():
     # Define input fields
     latitude = st.number_input("Latitude (e.g., 12.873800155645254)", value=12.873800155645254)
     longitude = st.number_input("Longitude (e.g., 80.07849378133422)", value=80.07849378133422)
-    status = st.number_input("Status (e.g., 0)", value=0)
+    status = 0
     station_capacity = st.number_input("Station capacity (e.g., 1)", value=1)
 
     if 'weather_data' not in st.session_state:
