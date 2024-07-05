@@ -115,7 +115,7 @@ def main():
             st.session_state.prediction = prediction[0]
 
     if 'prediction' in st.session_state:
-        st.write(f"Prediction: {st.session_state.prediction}")
+        st.write(f"Number of Active Swaps: {st.session_state.prediction}")
 
 if __name__ == '__main__':
     main()
