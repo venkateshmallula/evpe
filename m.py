@@ -92,7 +92,6 @@ def main():
     if st.session_state.weather_data:
         st.write(f"Temperature: {st.session_state.weather_data['temperature']}")
         st.write(f"Humidity: {st.session_state.weather_data['humidity']}")
-        st.write(f"Weather: {st.session_state.weather_data['weather_category']}")
         
         # Create input data tuple
         input_data = (latitude, longitude, status, station_capacity,
